@@ -16,7 +16,7 @@ UDP (Protocolo de datagramas de usuario) es un protocolo de comunicación de red
 sudo -s
 ``` 
 ```
-wget https://raw.githubusercontent.com/thefather12/UDP-PRO/main/install.sh; chmod +x install.sh; ./install.sh
+wget https://raw.githubusercontent.com/pepin293/UDP-PLUS/main/install.sh; chmod +x install.sh; ./install.sh
 ```
 
 
