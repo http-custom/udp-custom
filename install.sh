@@ -24,7 +24,7 @@ sudo apt install -y curl
 sudo apt install -y dos2unix
 sudo apt install -y neofetch
 
-source <(curl -sSL 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/module')
+source <(curl -sSL 'https://raw.githubusercontent.com/http-custom/udp-custom/main/module/module')
 
 time_reboot() {
   print_center -ama "${a92:-System/Server Reboot In} $1 ${a93:-Seconds}"
@@ -79,28 +79,28 @@ else
   # systemctl stop udp-request &>/dev/null
 
  # [+get files ⇣⇣⇣+]
-  source <(curl -sSL 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/module') &>/dev/null
-  wget -O /etc/UDPCustom/module 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/module' &>/dev/null
+  source <(curl -sSL 'https://raw.githubusercontent.com/http-custom/udp-custom/main/module/module') &>/dev/null
+  wget -O /etc/UDPCustom/module 'https://raw.githubusercontent.com/http-custom/udp-custom/main/module/module' &>/dev/null
   chmod +x /etc/UDPCustom/module
 
-  wget "https://raw.githubusercontent.com/thefather12/UDP-PRO/main/bin/udp-custom-linux-amd64" -O /root/udp/udp-custom &>/dev/null
+  wget "https://raw.github.com/http-custom/udp-custom/main/bin/udp-custom-linux-amd64" -O /root/udp/udp-custom &>/dev/null
   # wget "https://raw.githubusercontent.com/prjkt-nv404/UDP-Custom-Installer-Manager/main/bin/udp-request-linux-amd64" -O /usr/bin/udp-request &>/dev/null
   chmod +x /root/udp/udp-custom
   # chmod +x /usr/bin/udp-request
 
-  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/limiter.sh'
+  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/http-custom/udp-custom/main/module/limiter.sh'
   cp /etc/limiter.sh /etc/UDPCustom
   chmod +x /etc/limiter.sh
   chmod +x /etc/UDPCustom
   
   # [+udpgw+]
-  wget -O /etc/udpgw 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/udpgw'
+  wget -O /etc/udpgw 'https://raw.github.com/http-custom/udp-custom/main/module/udpgw'
   mv /etc/udpgw /bin
   chmod +x /bin/udpgw
 
   # [+service+]
-  wget -O /etc/udpgw.service 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/config/udpgw.service'
-  wget -O /etc/udp-custom.service 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/config/udp-custom.service'
+  wget -O /etc/udpgw.service 'https://raw.githubusercontent.com/http-custom/udp-custom/main/config/udpgw.service'
+  wget -O /etc/udp-custom.service 'https://raw.githubusercontent.com/http-custom/udp-custom/main/config/udp-custom.service'
   
   mv /etc/udpgw.service /etc/systemd/system
   mv /etc/udp-custom.service /etc/systemd/system
@@ -115,11 +115,11 @@ else
   systemctl start udp-custom &>/dev/null
 
   # [+config+]
-  wget "https://raw.githubusercontent.com/thefather12/UDP-PRO/main/config/config.json" -O /root/udp/config.json &>/dev/null
+  wget "https://raw.githubusercontent.com/http-custom/udp-custom/main/config/config.json" -O /root/udp/config.json &>/dev/null
   chmod +x /root/udp/config.json
 
   # [+menu+]
-  wget -O /usr/bin/udp 'https://raw.githubusercontent.com/thefather12/UDP-PRO/main/module/udp' 
+  wget -O /usr/bin/udp 'https://raw.githubusercontent.com/http-custom/udp-custom/main/module/udp' 
   chmod +x /usr/bin/udp
   ufw disable &>/dev/null
   sudo apt-get remove --purge ufw firewalld -y
