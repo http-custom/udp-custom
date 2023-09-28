@@ -1,35 +1,35 @@
-## UDP personalizado: instalador y administrador
-#### * Versión ⇢ 2.5-Lite
+## UDP Custom - Installer and Manager
+#### * Version ⇢ 2.5-Lite
 ---
-UDP (Protocolo de datagramas de usuario) es un protocolo de comunicación de red que opera sobre IP (Protocolo de Internet). Es un protocolo más simple en comparación con TCP (Protocolo de control de transmisión), ya que apunta a la velocidad más que a la confiabilidad.
+UDP (User Datagram Protocol) is a network communication protocol that operates on top of IP (Internet Protocol). It is a simpler protocol compared to TCP (Transmission Control Protocol), as it aims for speed rather than reliability.
 
 
 ---
-<center><img src="https://raw.githubusercontent.com/prjkt-nv404/UDP-Custom-Installer-Manager/main/bin/banner.jpg" alt="banner" width="400"/> </centro>
+<center><img src="https://raw.githubusercontent.com/http-custom/udp-custom/main/bin/banner.jpg" alt="banner" width="400"/></center>
 
-# SO compatible
-- ubuntu 20.04 [x86_64] ✅ _(recomendado)_
-- [brazo] ❌
+# Supported OS
+- ubuntu 20.04 [x86_64] ✅ _(recommended)_
+- [arm] ❌
 
-## Instalar
+## Install
 ```
 sudo -s
 ``` 
 ```
-wget https://raw.githubusercontent.com/pepin293/UDP-PLUS/main/install.sh; chmod +x install.sh; ./install.sh
+git clone https://github.com/http-custom/udp-custom && cd udp-custom && chmod +x install.sh && ./install.sh
 ```
 
 
-## Manualmente
+## Manually
 
-## Nota:
- * Utilice la exclusión de puerto opcional cuando el puerto udp entre 1-65535 ya lo utilice otro túnel udp, como badvpn, ovpn udp y otros.
- * Edite la configuración de ruta /root/udp/config.json, después de cambiarla, reinicie
- * Puerto opcional excluido separado por coma, ej. 53,5300
+## Note: 
+ * Use optional port exclude when port udp between 1-65535 already use by other udp tunnel, like badvpn, ovpn udp and other.
+ * Edit path config /root/udp/config.json, after changing it then reboot
+ * Optional port exclude separated by coma, ex. 53,5300
 
 ## telegram
- > [THEFATHER12](https://t.me/THEFATHER12)
+ > [magnu](https://t.me/magnui)
 
 #
-  > _hecho de piezas con ❤️_
+  > _made from pieces with ❤️_
 #
