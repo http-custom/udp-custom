@@ -185,7 +185,7 @@ back() {
 
 exit2home() {
   msg -bar
-  echo -ne "$(msg -verd " [0]") $(msg -verm2 ">") " && msg -bra "\033[1;41m${a_back:-VOLVER AL MENU}"
+  echo -ne "$(msg -verd " [0]") $(msg -verm2 ">") " && msg -bra "\033[1;41m${a_back:-EXIT}"
   msg -bar0
 }
 
