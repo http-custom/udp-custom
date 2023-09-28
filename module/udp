@@ -989,7 +989,7 @@ menu_main() {
   # title "\033[3;40m${a10:-• UDP Custom | UDP Request Manager} •"
   main_title "\033[3;40m${a10:-• UDP Custom Manager} •"
   print_center -ama 'Version: ⇢ 2.5-Lite'
-  print_center -ama 'by @THEFATHER12'
+  print_center -ama 'Tunnel App : HTTP Custom'
   msg -bar
 
   # calculate RAM and CPU usage
