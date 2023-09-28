@@ -59,9 +59,8 @@ else
 
     # [change timezone to UTC +0]
   echo ""
-  echo " ⇢ Change timezone to UTC +0"
-  echo " ⇢ for Africa/Accra [GH] GMT +00:00"
-  ln -fs /usr/share/zoneinfo/Africa/Accra /etc/localtime
+  echo " ⇢ Binary Core official ePro Dev Team"
+  echo " ⇢ UDP Custom"
   sleep 3
 
   # [+clean up+]
