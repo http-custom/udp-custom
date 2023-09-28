@@ -940,7 +940,7 @@ menu_udp_request() {
 # [UDP - Custom]
 menu_udp_custom() {
   # title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by @THEFATHER12•"
-  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by @THEFATHER12•"
+  title_sub "\033[3;40m${a10:-•UDP Custom Manager} "
   print_center -ama ' Version: 2.5-Lite'
   print_center -ama ' UDP CUSTOM'
   print_center -ama ' Tunnel App : HTTP Custom'
@@ -988,7 +988,7 @@ menu_udp_custom() {
 menu_main() {
   # title "\033[3;40m${a10:-• UDP Custom | UDP Request Manager} •"
   main_title "\033[3;40m${a10:-• UDP Custom Manager} •"
-  print_center -ama 'Version: ⇢ 2.5-Lite'
+  print_center -ama 'Version: 2.5-Lite'
   print_center -ama 'Tunnel App : HTTP Custom'
   msg -bar
 
