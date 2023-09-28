@@ -846,8 +846,8 @@ vps_info() {
   ram=$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')
 
   clear
-  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by @THEFATHER12•"
-  print_center -ama ' Version: ⇢ 2.5-Lite'
+  title_sub "\033[3;40m${a10:-•UDP Custom Manager} •"
+  print_center -ama ' Version: 2.5-Lite'
   print_center -ama ' VPS Info'
   msg -bar
   echo " "
@@ -869,7 +869,7 @@ vps_info() {
 # [UDP - Request]
 menu_udp_request() {
   make_service
-  title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by @THEFATHER12•"
+  title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} •"
   print_center -ama ' Version: ⇢ 2.5-Lite'
   print_center -ama ' UDP REQUEST'
   print_center -ama ' Tunnel App : SocksIP'
@@ -939,7 +939,7 @@ menu_udp_request() {
 
 # [UDP - Custom]
 menu_udp_custom() {
-  # title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by @THEFATHER12•"
+  # title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} •"
   title_sub "\033[3;40m${a10:-•UDP Custom Manager} •"
   print_center -ama ' Version: 2.5-Lite'
   print_center -ama ' UDP CUSTOM'
